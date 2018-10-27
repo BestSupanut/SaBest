@@ -1,0 +1,20 @@
+
+<mat-card class="example-card center">
+    <mat-card-title>ชื่อเมนู</mat-card-title>
+    <mat-list>
+      <div *ngFor="let menu of menus">
+        <mat-card-content>
+          <mat-divider></mat-divider>
+          <a mat-button routerLink="info/{{menu.mid}}">•  {{menu.mname}} </a>
+        <mat-divider></mat-divider>
+        </mat-card-content>
+      </div>
+      <div class="button-row">
+          <a mat-raised-button routerLink="/AddFood">Add food</a>
+        </div>
+    </mat-list>
+
+</mat-card>
+
+
+
